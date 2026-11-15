@@ -11,7 +11,7 @@ jobs:
     name: Test Android
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         api-level: [ 23 ]
     steps:
@@ -62,7 +62,7 @@ jobs:
     name: Test Android
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         api-level: [ 26, 30, 34 ]
     steps:
